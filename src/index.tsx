@@ -7,7 +7,7 @@ const Title = () => {
 
 const Content = () => {
     return (
-        <React.Fragment>
+        <>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
                 aliquid ea veritatis quae voluptates ratione nisi dolorum illo
@@ -20,16 +20,16 @@ const Content = () => {
                 saepe odio beatae culpa fugit distinctio ad corporis expedita
                 earum consequatur veniam.
             </p>
-        </React.Fragment>
+        </>
     )
 }
 
 const App = () => {
     return (
-        <React.Fragment>
+        <>
             <Title />
             <Content />
-        </React.Fragment>
+        </>
     )
 }
 
