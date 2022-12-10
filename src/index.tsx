@@ -1,17 +1,35 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-function App() {
+const Title = () => {
+    return <h1>Hello React.js</h1>
+}
+
+const Content = () => {
     return (
-        <div>
-            <h1>Hello React.js</h1>
+        <React.Fragment>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
                 aliquid ea veritatis quae voluptates ratione nisi dolorum illo
                 saepe odio beatae culpa fugit distinctio ad corporis expedita
                 earum consequatur veniam.
             </p>
-        </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
+                aliquid ea veritatis quae voluptates ratione nisi dolorum illo
+                saepe odio beatae culpa fugit distinctio ad corporis expedita
+                earum consequatur veniam.
+            </p>
+        </React.Fragment>
+    )
+}
+
+const App = () => {
+    return (
+        <React.Fragment>
+            <Title />
+            <Content />
+        </React.Fragment>
     )
 }
 
