@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import {Content} from './Content'
 
 type TitleProps = {
     title: string
@@ -7,7 +8,7 @@ type TitleProps = {
     num?: number
 }
 
-const Title = ({title, text='Test'}: TitleProps) => {
+const Title = ({ title, text = 'Test' }: TitleProps) => {
     return (
         <h1>
             {text} {title}
@@ -15,31 +16,10 @@ const Title = ({title, text='Test'}: TitleProps) => {
     )
 }
 
-const Content = () => {
-    return (
-        <>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
-                aliquid ea veritatis quae voluptates ratione nisi dolorum illo
-                saepe odio beatae culpa fugit distinctio ad corporis expedita
-                earum consequatur veniam.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
-                aliquid ea veritatis quae voluptates ratione nisi dolorum illo
-                saepe odio beatae culpa fugit distinctio ad corporis expedita
-                earum consequatur veniam.
-            </p>
-        </>
-    )
-}
-
 const App = () => {
     return (
         <>
             <Title text="Hello" title="Буратино" />
-            <Title text="Привет" title="Алиса" />
-            <Title title="Базилио" />
             <Content />
         </>
     )
