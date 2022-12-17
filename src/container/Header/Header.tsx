@@ -9,7 +9,12 @@ import Container from '@mui/material/Container'
 type Props = {}
 const Header = (props: Props) => {
     return (
-        <AppBar position="static">
+        <AppBar
+            position="static"
+            style={{
+                backgroundColor: 'green',
+            }}
+        >
             <Container maxWidth="lg">
                 <Toolbar>
                     <IconButton
