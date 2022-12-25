@@ -5,7 +5,7 @@ import {
     Button,
     TextField,
 } from '@mui/material'
-import { Component } from 'react'
+import { Component, useState } from 'react'
 import './ProductsListItem.scss'
 
 type Props = {
@@ -27,7 +27,7 @@ class ProductsListItem extends Component<Props, State> {
         super(props)
         this.state = {
             count: 1,
-            color: 'green'
+            color: 'green',
         }
         // this.onIncrementClick = this.onIncrementClick.bind(this)
         // this.onDecrementClick = this.onDecrementClick.bind(this)
@@ -45,11 +45,13 @@ class ProductsListItem extends Component<Props, State> {
         }))
     }
 
-changeColor(){
-    this.setState({
-        color: 'red',
-    })
-}
+    changeColor = () => {
+        if(this.state.color === 'green'){
+            this.setState({ color: 'red' })
+        }else{
+            this.setState({ color: 'green' })
+        }
+    }
 
     render() {
         const { title, desc, type, capacity, price, image } = this.props
@@ -67,8 +69,11 @@ changeColor(){
                     <div className="product-features">
                         <span>Capacity:</span> {capacity} gb
                     </div>
+
                     <p>Color:{this.state.color}</p>
-                    <button onClick={() => this.changeColor()}>Change color</button>
+                    <button onClick={() => this.changeColor()}>
+                        Change color
+                    </button>
                     <div className="product-price">{price}₴ </div>
                     <div className="product-quantity">
                         <Button
@@ -95,12 +100,5 @@ changeColor(){
     }
 }
 
-// const ProductsListItem = ({
-//     title,
-//     desc,
-//     type,
-//     capacity,
-//     price,
-//     image,
-// }: Props) => {}
+
 export default ProductsListItem
