@@ -36,7 +36,7 @@ const ProductsListItem = ({
         setCount((prevState: number) => prevState - 1)
     }
 
-    const [color, setColor] = useState<string>('green')
+    
 
     return (
         <Card className="product-list-item">
