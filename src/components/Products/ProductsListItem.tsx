@@ -8,6 +8,7 @@ import {
 import { useState } from 'react'
 import './ProductsListItem.scss'
 
+
 type Props = {
     id: number
     title: string
