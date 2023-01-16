@@ -17,13 +17,13 @@ const CartPage = ({ productsInCart }: Props) => {
                     m: '0 30px',
                 }}
             ></Typography>
-            <Grid container spacing={2}>
+            <Grid container spacing={4}>
                 <CartProductsList
                     productsInCart={productsInCart}
                     CartItem={CartProductsListItemExtended}
                 />
-                <CartTotal productsInCart={productsInCart} />
             </Grid>
+            <CartTotal productsInCart={productsInCart} />
         </div>
     )
 }

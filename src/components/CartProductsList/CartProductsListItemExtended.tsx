@@ -1,5 +1,6 @@
-import { CardContent, Card, Grid } from '@mui/material'
+import { CardContent, Card, Grid, Button } from '@mui/material'
 import { ProductsProps } from 'components/Products/productsArray'
+import DeleteIcon from '@mui/icons-material/Delete'
 
 type Props = {
     product: ProductsProps
@@ -17,6 +18,9 @@ const CartProductsListItemExtended = ({ product, productCount }: Props) => {
                     <div>{product.title}</div>
                     <p>Price for one item: {product.price} </p>
                     <p>Count: {productCount}</p>
+                    <Button variant='outlined'>
+                        <DeleteIcon />
+                    </Button>
                 </CardContent>
             </Card>
         </Grid>
