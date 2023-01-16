@@ -15,7 +15,7 @@ const productsArray = [
         desc: 'Экран (6.1", OLED (Super Retina XDR), 2556x1179) / Apple A16 Bionic / основная квадро-камера: 48 Мп + 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 256 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 16',
         type: 'phone',
         capacity: '256',
-        price: 62999,
+        price: 1500,
         image: '/images/iphone-14pro.jpg',
     },
     {
@@ -24,7 +24,7 @@ const productsArray = [
         desc: 'Экран (6.1", OLED (Super Retina XDR), 2532x1170) / Apple A14 Bionic / двойная основная камера: 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM, eSIM / iOS 14',
         type: 'phone',
         capacity: '128',
-        price: 32500,
+        price: 800,
         image: '/images/iphone-12.jpg',
     },
     {
@@ -33,7 +33,7 @@ const productsArray = [
         desc: 'Экран (5.4", OLED (Super Retina XDR), 2340х1080) / Apple A15 Bionic / двойная основная камера: 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 256 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM, eSIM / iOS 15',
         type: 'phone',
         capacity: '256',
-        price: 36500,
+        price: 1000,
         image: '/images/iphone-13-mini.jpg',
     },
     {
@@ -42,7 +42,7 @@ const productsArray = [
         desc: 'Экран (6.1", IPS (Liquid Retina HD), 1792x828)/ Apple A13 Bionic/ основная двойная камера: 12 Мп + 12 Мп, фронтальная камера: 12 Мп/ RAM 4 ГБ/ 128 ГБ встроенной памяти/ 3G/ LTE/ GPS/ ГЛОНАСС/ Nano-SIM/ iOS 13 / 3046 мА*ч',
         type: 'phone',
         capacity: '128',
-        price: 25500,
+        price: 700,
         image: '/images/iphone-11.jpg',
     },
     {
@@ -51,7 +51,7 @@ const productsArray = [
         desc: 'Экран (4.7", IPS, 1334x750) / Apple A15 Bionic / основная камера: 12 Мп, фронтальная камера: 7 Мп / 256 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM, eSIM / iOS 15',
         type: 'phone',
         capacity: '256',
-        price: 20000,
+        price: 500,
         image: '/images/iphone-SE.jpg',
     },
     {
@@ -60,7 +60,7 @@ const productsArray = [
         desc: 'Экран (6.7", OLED (Super Retina XDR), 2796x1290) / Apple A16 Bionic / основная квадро-камера: 48 Мп + 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 16',
         type: 'phone',
         capacity: '128',
-        price: 62999,
+        price: 1700,
         image: '/images/iphone-14pro-max.jpg',
     },
 ]
