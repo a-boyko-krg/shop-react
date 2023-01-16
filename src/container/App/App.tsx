@@ -26,6 +26,19 @@ const App = () => {
         setProductsInCart((prevState: ProductsInCart) => omit(prevState, [id]))
     }
 
+    const incrementCount = (id: number) => {
+        setProductsInCart((prevState: ProductsInCart) => ({
+            ...prevState,
+            [id]: prevState[id] + 1
+        }))
+    }
+     const decrementCount = (id: number) => {
+         setProductsInCart((prevState: ProductsInCart) => ({
+             ...prevState,
+             [id]: prevState[id] - 1,
+         }))
+     }
+
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
